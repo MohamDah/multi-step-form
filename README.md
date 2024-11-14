@@ -37,70 +37,32 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/MohamDah/multi-step-form)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://mohamdah-multi-step-form.netlify.app/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
+- TypeScript
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [Tailwind](https://tailwindcss.com/) - CSS framework
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I used this project to practice and get better at using Tailwind. At the start, it was absolutely horrible trying to get used to using Tailwind instead of vanilla CSS. I was so close to giving up and just switching to CSS, but I beared through. But the nice thing is, after understanding the quirks of it and getting used to the class names, I began to see the usefulness of it. It's nice to not have to come up with class names, and switching back and forth between the html and the stylesheet file. Having it all self contained in the same place it's affecting is really convenient. 
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+Other than that, the logic for the displaying everything properly, validation and managing which steps the user is allowed to access kinda hurt my brain. Fortunately, it's just simple JavaScript logic and I manage to figure it out eventually.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+I need to improve how I write my JavaScript code. It always ends up looking a bit messy after I'm done, so I should try to consider how it's going to look if I'm looking back into it after a period of time. At least I got into TypeScript now, so it should be less ambiguous than it would have otherwise. Although, TypeScript does inflate the code a bit, but oh well.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [MohamDah](https://mohamdah.netlify.app/)
+- Frontend Mentor - [@MohamDah](https://www.frontendmentor.io/profile/MohamDah)
+- Twitter - [@MohamIsMe](https://www.twitter.com/MohamIsMe)
+- Linkedin - [@mohamdah](https://www.linkedin.com/in/mohamdah/)
