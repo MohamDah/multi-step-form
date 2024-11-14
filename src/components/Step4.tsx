@@ -14,7 +14,7 @@ export default function Step4({ step2Selected, step3Selected, setOnStep }: Step4
             return (
                 <div key={addOn.title} className="flex justify-between mt-2 md:mt-3">
                     <p className="font-medium md:text-xs text-neutral-cool-gray">{addOn.title}</p>
-                    <p className="md:text-sm text-primary-marine-blue">
+                    <p className="text-sm text-primary-marine-blue">
                         {step2Selected.yearly ? addOn.yearlyPrice : addOn.monthlyPrice}
                     </p>
                 </div>

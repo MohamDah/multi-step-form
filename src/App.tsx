@@ -1,7 +1,7 @@
 import NavItem from "./components/NavItem"
 import msidebar from "./assets/images/bg-sidebar-mobile.svg"
 import dsidebar from "./assets/images/bg-sidebar-desktop.svg"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Step1 from "./components/Step1"
 import Step2 from "./components/Step2"
 import Step3 from "./components/Step3"
@@ -32,10 +32,8 @@ function App() {
     })
 
     const [errMessage, setErrMessage] = useState("")
-    // const stepsCond = {
-    //     step1: 
-    // }
 
+    const [submitMessage, setSubmitMessage] = useState("")
 
     const navbar = (
         <nav className="relative flex flex-row justify-center w-full px-10 py-8 overflow-hidden rounded-md md:min-w-64 md:gap-6 md:w-1/3 md:flex-col md:justify-start md:items-start md:pl-6">
@@ -112,6 +110,16 @@ function App() {
         }
     }
 
+    function confirm() {
+        setSubmitMessage("Submission Successful!")
+    }
+
+    useEffect(()=> {
+        if (submitMessage) {
+            setSubmitMessage("")
+        }
+    }, [onStep])
+
     return (
         <>
             <img src={msidebar} alt="sidebar" className="absolute w-full md:hidden" />
@@ -121,6 +129,7 @@ function App() {
                     {stepEl}
 
                     {errMessage && <h1 className="w-full text-center text-red-700 text-2xl md:text-3xl mt-4">{errMessage}</h1>}
+                    {submitMessage && <h1 className="w-full text-center text-green-700 text-2xl md:text-3xl mt-4">{submitMessage}</h1>}
 
                     {
                         onStep > 1 &&
@@ -136,7 +145,8 @@ function App() {
                                 ? <button onClick={() => handleOnStep()}
                                     className="absolute hidden h-10 text-sm font-medium text-white rounded-lg bottom-2 right-2 w-28 hover:bg-blue-900 bg-primary-marine-blue md:block"
                                 >Next Step</button>
-                                : <button className="absolute hidden h-10 text-sm font-medium text-white rounded-lg bottom-2 right-2 w-28 bg-primary-purplish-blue md:block"
+                                : <button onClick={confirm}
+                                className="absolute hidden h-10 text-sm font-medium text-white rounded-lg bottom-2 right-2 w-28 bg-primary-purplish-blue md:block"
                                 >Confirm</button>
                     }
                 </main>
@@ -156,7 +166,8 @@ function App() {
                         : onStep !== 4
                             ? <button onClick={() => handleOnStep()}
                                 className="w-24 ml-auto text-sm font-medium text-white rounded bg-primary-marine-blue hover:bg-blue-900">Next Step</button>
-                            : <button className="w-24 ml-auto text-sm font-medium text-white rounded bg-primary-purplish-blue">Confirm</button>
+                            : <button onClick={confirm}
+                            className="w-24 ml-auto text-sm font-medium text-white rounded bg-primary-purplish-blue">Confirm</button>
 
 
                 }
